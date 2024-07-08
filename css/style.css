@@ -1,0 +1,128 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    height: 15vh;
+    background-color: #090e4d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    padding: 1em;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar h4 {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(175, 175, 175);
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 15vh - 40px);
+    padding: 0;
+    margin: 0;
+}
+
+.start{
+    height: 100%;
+    width: 100%;
+    animation: started 2s ease-in-out;
+}
+
+.container-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: white;
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 15px 5px rgba(1, 1, 1, 0.5);
+}
+
+.content .title {
+    padding: 1.5rem 0;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.content .description {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.Button {
+    background-color: #ff6347;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    height: 40px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 1px 5px;
+}
+
+.Button:hover {
+    transform: translate(2px, -5px);
+    box-shadow: -2px 5px 3px rgba(255, 99, 71, 0.8);
+
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+@keyframes started {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
